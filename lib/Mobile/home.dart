@@ -11,6 +11,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    final githubUrl = 'https://github.com/Ahmadsaniliman/hngstagezero';
+    final mobileDevsUrl = 'http://hng.tech/hire/mobile-ui-ux-developers';
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -29,7 +31,7 @@ class _HomePageState extends State<HomePage> {
             TextButton(
               onPressed: () async {
                 await launchUrl(
-                  Uri.parse('https://github.com/Ahmadsaniliman/hngstagezero'),
+                  Uri.parse(githubUrl),
                 );
               },
               child: const Text(
@@ -44,7 +46,7 @@ class _HomePageState extends State<HomePage> {
             TextButton(
               onPressed: () async {
                 await launchUrl(
-                  Uri.parse('http://hng.tech/hire/mobile-ui-ux-developers'),
+                  Uri.parse(mobileDevsUrl),
                 );
               },
               child: const Text(
